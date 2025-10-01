@@ -9,7 +9,8 @@ function App() {
   const [downloadUrl, setDownloadUrl] = useState('');
   const [dark, setDark] = useState(false);
 
-  const BACKEND = 'https://file-uploader-4.onrender.com/'; // change if your backend is on another host
+  const BACKEND = 'https://file-uploader-4.onrender.com'; // remove trailing slash
+ // change if your backend is on another host
 
   const handleSubmit = async (e) => {
     e.preventDefault();

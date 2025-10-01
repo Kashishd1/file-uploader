@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'dev-secret-key-change-this'
 DEBUG = True
-ALLOWED_HOSTS = ['https://file-uploader-4.onrender.com/']
+ALLOWED_HOSTS = ['file-uploader-4.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,7 +50,11 @@ ROOT_URLCONF = 'backend.urls'
 # ... keep default TEMPLATES and WSGI settings ...
 
 # CORS — allow React dev server to talk to Django
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "https://file-uploader-umber-one.vercel.app/",
+]
+
 
 # Static + Media (for uploaded + output files)
 STATIC_URL = '/static/'
