@@ -9,7 +9,7 @@ function App() {
   const [downloadUrl, setDownloadUrl] = useState('');
   const [dark, setDark] = useState(false);
 
-  const BACKEND = 'http://127.0.0.1:8000/api'; // change if your backend is on another host
+  const BACKEND = 'https://file-uploader-4.onrender.com/'; // change if your backend is on another host
 
   const handleSubmit = async (e) => {
     e.preventDefault();
