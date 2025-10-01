@@ -50,11 +50,7 @@ ROOT_URLCONF = 'backend.urls'
 # ... keep default TEMPLATES and WSGI settings ...
 
 # CORS — allow React dev server to talk to Django
-CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = [
-    "https://file-uploader-umber-one.vercel.app/",
-]
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Static + Media (for uploaded + output files)
 STATIC_URL = '/static/'
